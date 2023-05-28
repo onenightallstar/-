@@ -1,7 +1,7 @@
 show databases;
 create database universityinnovationproject;
 use universityinnovationproject;
-
+åˆ›å»ºè¡¨
 create table S
 (
 Sno char(5) unique,
@@ -38,34 +38,34 @@ ALTER TABLE SP ADD FOREIGN KEY student_no (Sno) REFERENCES S (Sno);
 ALTER TABLE SP ADD FOREIGN KEY project_no (Pno) REFERENCES P (Pno);
 
 
-insert into S(Sno,Sname,Ssex,Sage,Sdept) value ('23121', 'ÀîÀò', 'ÄÐ', 20, 'CS');
-insert into S(Sno,Sname,Ssex,Sage,Sdept) value ('23122', 'ÁõÐÇ', 'Å®', 19, 'CS' );
-insert into S(Sno,Sname,Ssex,Sage,Sdept) value ('23123', 'ÀîÇ¿', 'Å®', 19, 'CS' );
-insert into S(Sno,Sname,Ssex,Sage,Sdept) value ('23124', 'ÁõËÕ', 'Å®', 19, 'CS' );
-insert into S(Sno,Sname,Ssex,Sage,Sdept) value ('23125', 'ËÕÓñ', 'ÄÐ', 20, 'CS' );
-insert into S(Sno,Sname,Ssex,Sage,Sdept) value ('23126', 'ÓñÁú', 'Å®', 19, 'CS' );
-insert into S(Sno,Sname,Ssex,Sage,Sdept) value ('23127', 'ÁúÎä', 'ÄÐ', 20, 'CS' );
-insert into S(Sno,Sname,Ssex,Sage,Sdept) value ('23128', 'ÎäÃ÷', 'Å®', 19, 'CS' );
-insert into S(Sno,Sname,Ssex,Sage,Sdept) value ('23201', 'ÀîË¬', 'ÄÐ' ,20, 'MA' );
-insert into S(Sno,Sname,Ssex,Sage,Sdept) value ('23202', 'ÍõºÆÈ»', 'ÄÐ', 18, 'MA');
-insert into S(Sno,Sname,Ssex,Sage,Sdept) value ('23203', 'Âí½Ü', 'ÄÐ', 20, 'MA'	 );
-insert into S(Sno,Sname,Ssex,Sage,Sdept) value ('23204', 'ÀîÎ´È»', 'Å®', 18, 'MA' );
-insert into S(Sno,Sname,Ssex,Sage,Sdept) value ('23205', 'ÁõÍ®Í®', 'Å®', 20, 'MA' );
-insert into S(Sno,Sname,Ssex,Sage,Sdept) value ('23206', '¶¡Ò»', 'Å®', 18, 'MA' );
-insert into S(Sno,Sname,Ssex,Sage,Sdept) value ('23321', 'ÕÅÁ¢', 'ÄÐ', 19, 'IS' );
-insert into S(Sno,Sname,Ssex,Sage,Sdept) value ('23322', 'ÑîÔÂ', 'Å®', 19, 'IS' );
+insert into S(Sno,Sname,Ssex,Sage,Sdept) value ('23121', 'ï¿½ï¿½ï¿½ï¿½', 'ï¿½ï¿½', 20, 'CS');
+insert into S(Sno,Sname,Ssex,Sage,Sdept) value ('23122', 'ï¿½ï¿½ï¿½ï¿½', 'Å®', 19, 'CS' );
+insert into S(Sno,Sname,Ssex,Sage,Sdept) value ('23123', 'ï¿½ï¿½Ç¿', 'Å®', 19, 'CS' );
+insert into S(Sno,Sname,Ssex,Sage,Sdept) value ('23124', 'ï¿½ï¿½ï¿½ï¿½', 'Å®', 19, 'CS' );
+insert into S(Sno,Sname,Ssex,Sage,Sdept) value ('23125', 'ï¿½ï¿½ï¿½ï¿½', 'ï¿½ï¿½', 20, 'CS' );
+insert into S(Sno,Sname,Ssex,Sage,Sdept) value ('23126', 'ï¿½ï¿½ï¿½ï¿½', 'Å®', 19, 'CS' );
+insert into S(Sno,Sname,Ssex,Sage,Sdept) value ('23127', 'ï¿½ï¿½ï¿½ï¿½', 'ï¿½ï¿½', 20, 'CS' );
+insert into S(Sno,Sname,Ssex,Sage,Sdept) value ('23128', 'ï¿½ï¿½ï¿½ï¿½', 'Å®', 19, 'CS' );
+insert into S(Sno,Sname,Ssex,Sage,Sdept) value ('23201', 'ï¿½ï¿½Ë¬', 'ï¿½ï¿½' ,20, 'MA' );
+insert into S(Sno,Sname,Ssex,Sage,Sdept) value ('23202', 'ï¿½ï¿½ï¿½ï¿½È»', 'ï¿½ï¿½', 18, 'MA');
+insert into S(Sno,Sname,Ssex,Sage,Sdept) value ('23203', 'ï¿½ï¿½ï¿½ï¿½', 'ï¿½ï¿½', 20, 'MA'	 );
+insert into S(Sno,Sname,Ssex,Sage,Sdept) value ('23204', 'ï¿½ï¿½Î´È»', 'Å®', 18, 'MA' );
+insert into S(Sno,Sname,Ssex,Sage,Sdept) value ('23205', 'ï¿½ï¿½Í®Í®', 'Å®', 20, 'MA' );
+insert into S(Sno,Sname,Ssex,Sage,Sdept) value ('23206', 'ï¿½ï¿½Ò»', 'Å®', 18, 'MA' );
+insert into S(Sno,Sname,Ssex,Sage,Sdept) value ('23321', 'ï¿½ï¿½ï¿½ï¿½', 'ï¿½ï¿½', 19, 'IS' );
+insert into S(Sno,Sname,Ssex,Sage,Sdept) value ('23322', 'ï¿½ï¿½ï¿½ï¿½', 'Å®', 19, 'IS' );
 
-insert into T(Tno,Tname,Tdept) value ('101', '°üÕü', 'CS');
-insert into T(Tno,Tname,Tdept) value ('102', 'Õ¹ÕÑ', 'CS');
-insert into T(Tno,Tname,Tdept) value ('103', 'ÕÅÁú', 'MA');
-insert into T(Tno,Tname,Tdept) value ('104','Íõ³¯', 'IS');
+insert into T(Tno,Tname,Tdept) value ('101', 'ï¿½ï¿½ï¿½ï¿½', 'CS');
+insert into T(Tno,Tname,Tdept) value ('102', 'Õ¹ï¿½ï¿½', 'CS');
+insert into T(Tno,Tname,Tdept) value ('103', 'ï¿½ï¿½ï¿½ï¿½', 'MA');
+insert into T(Tno,Tname,Tdept) value ('104','ï¿½ï¿½ï¿½ï¿½', 'IS');
 
-insert into P(Pno,Pname,Tno) value ('1', 'Êý¾Ý¿âÉè¼ÆÏîÄ¿',		'101');
-insert into P(Pno,Pname,Tno) value ('2', 'ÎÞÈË»ú·ÉÐÐÉè¼ÆÏîÄ¿',	'103'	);
-insert into P(Pno,Pname,Tno) value ('3', 'Ð£Ô°ÍøÂç¹æ»®ÏîÄ¿',		'102'	);
-insert into P(Pno,Pname,Tno) value ('4', '²Ù×÷ÏµÍ³Éè¼ÆÏîÄ¿',		'101'	);
-insert into P(Pno,Pname,Tno) value ('5', 'ÊÓ¾õ´¦ÀíÏîÄ¿',			'102'	  );
-insert into P(Pno,Pname,Tno) value ('6', '´óÄ£ÐÍ¹¹½¨ÏîÄ¿',		'104'	 );
+insert into P(Pno,Pname,Tno) value ('1', 'ï¿½ï¿½ï¿½Ý¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿',		'101');
+insert into P(Pno,Pname,Tno) value ('2', 'ï¿½ï¿½ï¿½Ë»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿',	'103'	);
+insert into P(Pno,Pname,Tno) value ('3', 'Ð£Ô°ï¿½ï¿½ï¿½ï¿½æ»®ï¿½ï¿½Ä¿',		'102'	);
+insert into P(Pno,Pname,Tno) value ('4', 'ï¿½ï¿½ï¿½ï¿½ÏµÍ³ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿',		'101'	);
+insert into P(Pno,Pname,Tno) value ('5', 'ï¿½Ó¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿',			'102'	  );
+insert into P(Pno,Pname,Tno) value ('6', 'ï¿½ï¿½Ä£ï¿½Í¹ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿',		'104'	 );
 																   
 insert into SP(Sno,Pno,Grade) value ('23122', '3', 80	 );
 insert into SP(Sno,Pno,Grade) value ('23122', '2', 90	 );
@@ -93,22 +93,22 @@ insert into SP(Sno,Pno,Grade) value ('20128', '1', 88	 );
 insert into SP(Sno,Pno,Grade) value ('23122', '1', 75	 );
 insert into SP(Sno,Pno,Grade) value ('23122', '4', 80	 );
 
-1. ²éÑ¯²ÎÓë 2 ºÅÏîÄ¿µÄÑ§ÉúÑ§ºÅÓë¸Ã¿Î³Ì³É¼¨¡£
+1. ï¿½ï¿½Ñ¯ï¿½ï¿½ï¿½ï¿½ 2 ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½Ñ§ï¿½ï¿½Ñ§ï¿½ï¿½ï¿½ï¿½Ã¿Î³Ì³É¼ï¿½ï¿½ï¿½
 SELECT SP.Sno, SP.Grade
 FROM SP
 WHERE SP.Pno = 2;
 
-2. ²éÑ¯¸ºÔðÏîÄ¿ÃûÎª'Êý¾Ý¿âÉè¼ÆÏîÄ¿'µÄ½ÌÊ¦ÐÕÃû¡£
+2. ï¿½ï¿½Ñ¯ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½Îª'ï¿½ï¿½ï¿½Ý¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿'ï¿½Ä½ï¿½Ê¦ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 SELECT T.Tname
 FROM T,P
-WHERE T.Tno = P.Tno AND P.Pname = 'Êý¾Ý¿âÉè¼ÆÏîÄ¿';
+WHERE T.Tno = P.Tno AND P.Pname = 'ï¿½ï¿½ï¿½Ý¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿';
 
-3. ²éÑ¯Ã»ÓÐ²ÎÓë 3 ºÅÏîÄ¿µÄÑ§ÉúÐÕÃûÓë×¨Òµ¡£
+3. ï¿½ï¿½Ñ¯Ã»ï¿½Ð²ï¿½ï¿½ï¿½ 3 ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½Ñ§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×¨Òµï¿½ï¿½
 SELECT S.Sname, S.Sdept
 FROM S
 WHERE S.Sno NOT IN (SELECT SP.Sno FROM SP WHERE SP.Pno = '3');
 
-4. ²éÑ¯²Î¼ÓÁËËùÓÐÏîÄ¿µÄÑ§ÉúÐÕÃû¡£
+4. ï¿½ï¿½Ñ¯ï¿½Î¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½Ñ§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 SELECT S.Sname 
 FROM S
 WHERE NOT EXISTS (
@@ -121,7 +121,7 @@ WHERE NOT EXISTS (
   )
 );
 
-5. ²éÑ¯Ö»²Î¼ÓÒ»¸öÏîÄ¿µÄÑ§ÉúµÄÑ§ºÅ¡£
+5. ï¿½ï¿½Ñ¯Ö»ï¿½Î¼ï¿½Ò»ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½Ñ§ï¿½ï¿½ï¿½ï¿½Ñ§ï¿½Å¡ï¿½
 
 SELECT SP.Sno
 FROM SP
@@ -129,59 +129,59 @@ GROUP BY SP.Sno
 HAVING COUNT(DISTINCT SP.Pno) = 1;
 
 
-6. ²éÑ¯ËùÓÐÏîÄ¿³É¼¨¾ù¼°¸ñµÄÑ§ÉúµÄÑ§ºÅºÍÆ½¾ù³É¼¨,Æä½á¹û°´Æ½¾ù³É¼¨µÄ½µÐòÅÅÁÐ¡££¨Æ½¾ù³É¼¨£º²ÎÓëÏîÄ¿³É¼¨/²ÎÓëÏîÄ¿Êý£©
+6. ï¿½ï¿½Ñ¯ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½É¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ§ï¿½ï¿½ï¿½ï¿½Ñ§ï¿½Åºï¿½Æ½ï¿½ï¿½ï¿½É¼ï¿½,ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ½ï¿½ï¿½ï¿½É¼ï¿½ï¿½Ä½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½Æ½ï¿½ï¿½ï¿½É¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½É¼ï¿½/ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½ï¿½
 SELECT SP.Sno, AVG(SP.Grade) AS average_grade
 FROM SP
 GROUP BY SP.Sno
 HAVING MIN(SP.Grade) >= 60
 ORDER BY average_grade DESC;
 
-7. ²éÑ¯²ÎÓë1ºÅÏîÄ¿£¬ÇÒ³É¼¨ÅÅÃûµÚ2µÄÑ§ÉúÐÕÃû¡££¨³É¼¨ÏàÍ¬°´ÏàÍ¬Ãû´Î´¦Àí£¬±ÈÈç88£¬88£¬85£¬Ôò85ÎªµÚ2Ãû£©
+7. ï¿½ï¿½Ñ¯ï¿½ï¿½ï¿½ï¿½1ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½Ò³É¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½2ï¿½ï¿½Ñ§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É¼ï¿½ï¿½ï¿½Í¬ï¿½ï¿½ï¿½ï¿½Í¬ï¿½ï¿½ï¿½Î´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½88ï¿½ï¿½88ï¿½ï¿½85ï¿½ï¿½ï¿½ï¿½85Îªï¿½ï¿½2ï¿½ï¿½ï¿½ï¿½
 
-Êý¾ÝÐÞ¸Ä¡¢É¾³ýÓëÊÓÍ¼
-1. °Ñ4ºÅÏîÄ¿µÄ³É¼¨½µµÍ5%¡£
+ï¿½ï¿½ï¿½ï¿½ï¿½Þ¸Ä¡ï¿½É¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¼
+1. ï¿½ï¿½4ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½Ä³É¼ï¿½ï¿½ï¿½ï¿½ï¿½5%ï¿½ï¿½
 UPDATE SP
 SET Grade = Grade * 0.95
 WHERE Pno = 4;
 
-2. ÔÚP±íºÍ SP±íÖÐÉ¾³ýÏîÄ¿ºÅÎª5µÄËùÓÐÊý¾Ý¡££¨É¾³ýºó×ö»Ø¹ö´¦Àí£©
+2. ï¿½ï¿½Pï¿½ï¿½ï¿½ï¿½ SPï¿½ï¿½ï¿½ï¿½É¾ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½Îª5ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý¡ï¿½ï¿½ï¿½É¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ø¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 DELETE FROM SP WHERE Pno = '5';
 DELETE FROM P WHERE Pno = '5';
 ROLLBACK;
 
-3. ½¨Á¢ÄÐÑ§ÉúµÄÊÓÍ¼,ÊôÐÔ°üÀ¨Ñ§ºÅ¡¢ÐÕÃû¡¢²ÎÓëÏîÄ¿Ãû×ÖºÍ³É¼¨¡£
+3. ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¼,ï¿½ï¿½ï¿½Ô°ï¿½ï¿½ï¿½Ñ§ï¿½Å¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½ÖºÍ³É¼ï¿½ï¿½ï¿½
 CREATE VIEW Male_Students AS
 SELECT S.Sno, S.Sname, P.Pname, SP.Grade
 FROM S
 JOIN SP ON S.Sno = SP.Sno
 JOIN P ON SP.Pno = P.Pno
-WHERE S.Ssex = 'ÄÐ';
+WHERE S.Ssex = 'ï¿½ï¿½';
 
-4. ÔÚÄÐÑ§ÉúÊÓÍ¼ÖÐ²éÑ¯Æ½¾ù³É¼¨´óÓÚ 80 ·ÖµÄÑ§ÉúÑ§ºÅÓëÐÕÃû¡£
+4. ï¿½ï¿½ï¿½ï¿½Ñ§ï¿½ï¿½ï¿½ï¿½Í¼ï¿½Ð²ï¿½Ñ¯Æ½ï¿½ï¿½ï¿½É¼ï¿½ï¿½ï¿½ï¿½ï¿½ 80 ï¿½Öµï¿½Ñ§ï¿½ï¿½Ñ§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 SELECT Sno, Sname
 FROM Male_Students
 GROUP BY Sno, Sname
 HAVING AVG(Grade) > 80;
 
-5. ½¨Á¢³É¼¨ÊÓÍ¼£¬¼ÆËãÃ¿¸öÑ§ÉúµÄ²ÎÓëÏîÄ¿ÊýÄ¿¡¢Æ½¾ù³É¼¨¡£
+5. ï¿½ï¿½ï¿½ï¿½ï¿½É¼ï¿½ï¿½ï¿½Í¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã¿ï¿½ï¿½Ñ§ï¿½ï¿½ï¿½Ä²ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½Ä¿ï¿½ï¿½Æ½ï¿½ï¿½ï¿½É¼ï¿½ï¿½ï¿½
 CREATE VIEW Grade_Statistics AS
 SELECT Sno, COUNT(DISTINCT Pno) AS Project_Count, AVG(Grade) AS Average_Grade
 FROM SP
 GROUP BY Sno;
 
-6. Ê¹ÓÃ GRANT Óï¾ä,°Ñ¶Ô»ù±¾±í SP µÄËùÓÐÈ¨ÏÞ£¬S£¬P£¬T±íµÄ²éÑ¯È¨ÏÞÊÚ¸øRoot3¡£
+6. Ê¹ï¿½ï¿½ GRANT ï¿½ï¿½ï¿½,ï¿½Ñ¶Ô»ï¿½ï¿½ï¿½ï¿½ï¿½ SP ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¨ï¿½Þ£ï¿½Sï¿½ï¿½Pï¿½ï¿½Tï¿½ï¿½ï¿½Ä²ï¿½Ñ¯È¨ï¿½ï¿½ï¿½Ú¸ï¿½Root3ï¿½ï¿½
 create user Root3
 GRANT ALL PRIVILEGES ON universityinnovationproject.SP TO 'Root3';
 GRANT SELECT ON universityinnovationproject.S TO 'Root3';
 GRANT SELECT ON universityinnovationproject.P TO 'Root3';
 GRANT SELECT ON universityinnovationproject.T TO 'Root3';
 
-1.Ê×ÏÈ½â³ýS±íºÍSP±íµÄ²ÎÕÕ¹ØÏµ¡£È»ºóÔÚStudent±íÉÏ´´½¨Ò»¸ö´¥·¢Æ÷£¬Ê¹¸üÐÂÒ»¸öÑ§ÉúµÄÑ§ºÅÐÅÏ¢Ê±ÄÜ¹»¼¶ÁªµÄ¸üÐÂ´ËÑ§ÉúÔÚSP±íÖÐµÄÑ§ºÅÐÅÏ¢£¬²¢½øÐÐÑéÖ¤¡£
--- ½â³ýS±íºÍSP±íµÄ²ÎÕÕ¹ØÏµ
+1.ï¿½ï¿½ï¿½È½ï¿½ï¿½Sï¿½ï¿½ï¿½ï¿½SPï¿½ï¿½ï¿½Ä²ï¿½ï¿½Õ¹ï¿½Ïµï¿½ï¿½È»ï¿½ï¿½ï¿½ï¿½Studentï¿½ï¿½ï¿½Ï´ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Ñ§ï¿½ï¿½ï¿½ï¿½Ñ§ï¿½ï¿½ï¿½ï¿½Ï¢Ê±ï¿½Ü¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¸ï¿½ï¿½Â´ï¿½Ñ§ï¿½ï¿½ï¿½ï¿½SPï¿½ï¿½ï¿½Ðµï¿½Ñ§ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¤ï¿½ï¿½
+-- ï¿½ï¿½ï¿½Sï¿½ï¿½ï¿½ï¿½SPï¿½ï¿½ï¿½Ä²ï¿½ï¿½Õ¹ï¿½Ïµ
 ALTER TABLE SP
 DROP FOREIGN KEY ;
 
--- ´´½¨´¥·¢Æ÷
+-- ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 DELIMITER //
 CREATE TRIGGER update_Sno
 AFTER UPDATE ON Student
@@ -193,8 +193,8 @@ BEGIN
 END//
 DELIMITER ;
 
-2.ÔÚ S ±íÖÐ±àÐ´ insert µÄ´¥·¢Æ÷£¬¼ÙÈç±íµÄÑ§Éú²»ÄÜ³¬¹ý 18¸ö£¬Èç¹ûµÍÓÚ´ËÊý£¬Ìí¼Ó¿ÉÒÔÍê³É£»Èç¹û³¬¹ý´ËÊý£¬Ôò²åÈë½«²»ÄÜÊµÏÖ¡£½øÐÐÑéÖ¤¡£
--- ´´½¨SC_log±íÓÃÓÚ±£´æÐÞ¸ÄÇ°ºóµÄGrade×Ö¶ÎÐÅÏ¢
+2.ï¿½ï¿½ S ï¿½ï¿½ï¿½Ð±ï¿½Ð´ insert ï¿½Ä´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ§ï¿½ï¿½ï¿½ï¿½ï¿½Ü³ï¿½ï¿½ï¿½ 18ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¿ï¿½ï¿½ï¿½ï¿½ï¿½É£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ë½«ï¿½ï¿½ï¿½ï¿½Êµï¿½Ö¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¤ï¿½ï¿½
+-- ï¿½ï¿½ï¿½ï¿½SC_logï¿½ï¿½ï¿½ï¿½ï¿½Ú±ï¿½ï¿½ï¿½ï¿½Þ¸ï¿½Ç°ï¿½ï¿½ï¿½Gradeï¿½Ö¶ï¿½ï¿½ï¿½Ï¢
 CREATE TABLE SC_log (
   Sno INT,
   Pno INT,
@@ -203,7 +203,7 @@ CREATE TABLE SC_log (
   Modified_Date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
--- ´´½¨´¥·¢Æ÷
+-- ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 DELIMITER //
 CREATE TRIGGER update_Grade
 AFTER UPDATE ON SP
@@ -216,16 +216,16 @@ BEGIN
 END//
 DELIMITER ;
 
-3.ÔÚ SP ±íÉÏ±àÐ´ update ´¥·¢Æ÷£¬µ±ÐÞ¸Ä SP±íÖÐµÄ Grade ×Ö¶ÎÊ±½«ÆäÐÞ¸ÄÇ°ºóµÄÐÅÏ¢±£´æÔÚ SC_log ±íÖÐ¡£ÊµÑéÍê³Éºó,³·Ïû½¨Á¢µÄ»ù±¾±íºÍÊÓÍ¼¡£
--- É¾³ý´¥·¢Æ÷
+3.ï¿½ï¿½ SP ï¿½ï¿½ï¿½Ï±ï¿½Ð´ update ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Þ¸ï¿½ SPï¿½ï¿½ï¿½Ðµï¿½ Grade ï¿½Ö¶ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½Þ¸ï¿½Ç°ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ SC_log ï¿½ï¿½ï¿½Ð¡ï¿½Êµï¿½ï¿½ï¿½ï¿½Éºï¿½,ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¼ï¿½ï¿½
+-- É¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 DROP TRIGGER IF EXISTS update_Sno;
 DROP TRIGGER IF EXISTS limit_students;
 DROP TRIGGER IF EXISTS update_Grade;
 
--- É¾³ýSC_log±í
+-- É¾ï¿½ï¿½SC_logï¿½ï¿½
 DROP TABLE IF EXISTS SC_log;
 
--- »Ö¸´S±íºÍSP±íµÄ²ÎÕÕ¹ØÏµ
+-- ï¿½Ö¸ï¿½Sï¿½ï¿½ï¿½ï¿½SPï¿½ï¿½ï¿½Ä²ï¿½ï¿½Õ¹ï¿½Ïµ
 ALTER TABLE SP
 ADD CONSTRAINT FK_Sno FOREIGN KEY (Sno) REFERENCES S(Sno);
 
