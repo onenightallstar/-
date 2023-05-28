@@ -1,0 +1,239 @@
+show databases;
+create database universityinnovationproject;
+use universityinnovationproject;
+
+create table S
+(
+Sno char(5) unique,
+Sname char(7),
+Ssex char(1),
+Sage int check (Sage between 0 and 120),
+Sdept char(5)
+);
+
+create table T
+(
+Tno char(3) unique,
+Tname char(4),
+Tsex char(1),
+Tdept char(5)
+);
+
+create table P
+(
+Pno char(1) unique,
+Pname char(10),
+Tno char(3) 
+);
+
+create table SP
+(
+Sno char(5) ,
+Pno char(1),
+Grade int check (Grade between 0 and 100)
+);
+
+ALTER TABLE P ADD FOREIGN KEY teacher_no (Tno) REFERENCES T (Tno);
+ALTER TABLE SP ADD FOREIGN KEY student_no (Sno) REFERENCES S (Sno);
+ALTER TABLE SP ADD FOREIGN KEY project_no (Pno) REFERENCES P (Pno);
+
+
+insert into S(Sno,Sname,Ssex,Sage,Sdept) value ('23121', '李莉', '男', 20, 'CS');
+insert into S(Sno,Sname,Ssex,Sage,Sdept) value ('23122', '刘星', '女', 19, 'CS' );
+insert into S(Sno,Sname,Ssex,Sage,Sdept) value ('23123', '李强', '女', 19, 'CS' );
+insert into S(Sno,Sname,Ssex,Sage,Sdept) value ('23124', '刘苏', '女', 19, 'CS' );
+insert into S(Sno,Sname,Ssex,Sage,Sdept) value ('23125', '苏玉', '男', 20, 'CS' );
+insert into S(Sno,Sname,Ssex,Sage,Sdept) value ('23126', '玉龙', '女', 19, 'CS' );
+insert into S(Sno,Sname,Ssex,Sage,Sdept) value ('23127', '龙武', '男', 20, 'CS' );
+insert into S(Sno,Sname,Ssex,Sage,Sdept) value ('23128', '武明', '女', 19, 'CS' );
+insert into S(Sno,Sname,Ssex,Sage,Sdept) value ('23201', '李爽', '男' ,20, 'MA' );
+insert into S(Sno,Sname,Ssex,Sage,Sdept) value ('23202', '王浩然', '男', 18, 'MA');
+insert into S(Sno,Sname,Ssex,Sage,Sdept) value ('23203', '马杰', '男', 20, 'MA'	 );
+insert into S(Sno,Sname,Ssex,Sage,Sdept) value ('23204', '李未然', '女', 18, 'MA' );
+insert into S(Sno,Sname,Ssex,Sage,Sdept) value ('23205', '刘彤彤', '女', 20, 'MA' );
+insert into S(Sno,Sname,Ssex,Sage,Sdept) value ('23206', '丁一', '女', 18, 'MA' );
+insert into S(Sno,Sname,Ssex,Sage,Sdept) value ('23321', '张立', '男', 19, 'IS' );
+insert into S(Sno,Sname,Ssex,Sage,Sdept) value ('23322', '杨月', '女', 19, 'IS' );
+
+insert into T(Tno,Tname,Tdept) value ('101', '包拯', 'CS');
+insert into T(Tno,Tname,Tdept) value ('102', '展昭', 'CS');
+insert into T(Tno,Tname,Tdept) value ('103', '张龙', 'MA');
+insert into T(Tno,Tname,Tdept) value ('104','王朝', 'IS');
+
+insert into P(Pno,Pname,Tno) value ('1', '数据库设计项目',		'101');
+insert into P(Pno,Pname,Tno) value ('2', '无人机飞行设计项目',	'103'	);
+insert into P(Pno,Pname,Tno) value ('3', '校园网络规划项目',		'102'	);
+insert into P(Pno,Pname,Tno) value ('4', '操作系统设计项目',		'101'	);
+insert into P(Pno,Pname,Tno) value ('5', '视觉处理项目',			'102'	  );
+insert into P(Pno,Pname,Tno) value ('6', '大模型构建项目',		'104'	 );
+																   
+insert into SP(Sno,Pno,Grade) value ('23122', '3', 80	 );
+insert into SP(Sno,Pno,Grade) value ('23122', '2', 90	 );
+insert into SP(Sno,Pno,Grade) value ('23121', '3', 88	 );
+insert into SP(Sno,Pno,Grade) value ('23122', '5', 68	 );
+insert into SP(Sno,Pno,Grade) value ('23123', '1', 92	 );
+insert into SP(Sno,Pno,Grade) value ('23124', '2', 85	 );
+insert into SP(Sno,Pno,Grade) value ('23125', '5', 94	 );
+insert into SP(Sno,Pno,Grade) value ('23126', '3', 88	 );
+insert into SP(Sno,Pno,Grade) value ('23201', '1', 92	 );
+insert into SP(Sno,Pno,Grade) value ('23202', '1', 92	 );
+insert into SP(Sno,Pno,Grade) value ('23202', '6', 77	 );
+insert into SP(Sno,Pno,Grade) value ('23203', '2', 79	 );
+insert into SP(Sno,Pno,Grade) value ('23204', '4', 72	 );
+insert into SP(Sno,Pno,Grade) value ('23122', '6', 90	 );
+insert into SP(Sno,Pno,Grade) value ('23205', '3', 99	 );
+insert into SP(Sno,Pno,Grade) value ('23206', '5', 58	 );
+insert into SP(Sno,Pno,Grade) value ('23321', '1', 55	 );
+insert into SP(Sno,Pno,Grade) value ('23321', '6', 81	 );
+insert into SP(Sno,Pno,Grade) value ('23322', '6', 89	 );
+insert into SP(Sno,Pno,Grade) value ('23322', '2', 75	 );
+insert into SP(Sno,Pno,Grade) value ('23128', '4', 81	 );
+insert into SP(Sno,Pno,Grade) value ('23127', '4', 89	 );
+insert into SP(Sno,Pno,Grade) value ('20128', '1', 88	 );
+insert into SP(Sno,Pno,Grade) value ('23122', '1', 75	 );
+insert into SP(Sno,Pno,Grade) value ('23122', '4', 80	 );
+
+1. 查询参与 2 号项目的学生学号与该课程成绩。
+SELECT SP.Sno, SP.Grade
+FROM SP
+WHERE SP.Pno = 2;
+
+2. 查询负责项目名为'数据库设计项目'的教师姓名。
+SELECT T.Tname
+FROM T,P
+WHERE T.Tno = P.Tno AND P.Pname = '数据库设计项目';
+
+3. 查询没有参与 3 号项目的学生姓名与专业。
+SELECT S.Sname, S.Sdept
+FROM S
+WHERE S.Sno NOT IN (SELECT SP.Sno FROM SP WHERE SP.Pno = '3');
+
+4. 查询参加了所有项目的学生姓名。
+SELECT S.Sname 
+FROM S
+WHERE NOT EXISTS (
+  SELECT Pno
+  FROM P
+  WHERE NOT EXISTS (
+    SELECT SP.Sno
+    FROM SP
+    WHERE SP.Sno = S.Sno AND SP.Pno = P.Pno
+  )
+);
+
+5. 查询只参加一个项目的学生的学号。
+
+SELECT SP.Sno
+FROM SP
+GROUP BY SP.Sno
+HAVING COUNT(DISTINCT SP.Pno) = 1;
+
+
+6. 查询所有项目成绩均及格的学生的学号和平均成绩,其结果按平均成绩的降序排列。（平均成绩：参与项目成绩/参与项目数）
+SELECT SP.Sno, AVG(SP.Grade) AS average_grade
+FROM SP
+GROUP BY SP.Sno
+HAVING MIN(SP.Grade) >= 60
+ORDER BY average_grade DESC;
+
+7. 查询参与1号项目，且成绩排名第2的学生姓名。（成绩相同按相同名次处理，比如88，88，85，则85为第2名）
+
+数据修改、删除与视图
+1. 把4号项目的成绩降低5%。
+UPDATE SP
+SET Grade = Grade * 0.95
+WHERE Pno = 4;
+
+2. 在P表和 SP表中删除项目号为5的所有数据。（删除后做回滚处理）
+DELETE FROM SP WHERE Pno = '5';
+DELETE FROM P WHERE Pno = '5';
+ROLLBACK;
+
+3. 建立男学生的视图,属性包括学号、姓名、参与项目名字和成绩。
+CREATE VIEW Male_Students AS
+SELECT S.Sno, S.Sname, P.Pname, SP.Grade
+FROM S
+JOIN SP ON S.Sno = SP.Sno
+JOIN P ON SP.Pno = P.Pno
+WHERE S.Ssex = '男';
+
+4. 在男学生视图中查询平均成绩大于 80 分的学生学号与姓名。
+SELECT Sno, Sname
+FROM Male_Students
+GROUP BY Sno, Sname
+HAVING AVG(Grade) > 80;
+
+5. 建立成绩视图，计算每个学生的参与项目数目、平均成绩。
+CREATE VIEW Grade_Statistics AS
+SELECT Sno, COUNT(DISTINCT Pno) AS Project_Count, AVG(Grade) AS Average_Grade
+FROM SP
+GROUP BY Sno;
+
+6. 使用 GRANT 语句,把对基本表 SP 的所有权限，S，P，T表的查询权限授给Root3。
+create user Root3
+GRANT ALL PRIVILEGES ON universityinnovationproject.SP TO 'Root3';
+GRANT SELECT ON universityinnovationproject.S TO 'Root3';
+GRANT SELECT ON universityinnovationproject.P TO 'Root3';
+GRANT SELECT ON universityinnovationproject.T TO 'Root3';
+
+1.首先解除S表和SP表的参照关系。然后在Student表上创建一个触发器，使更新一个学生的学号信息时能够级联的更新此学生在SP表中的学号信息，并进行验证。
+-- 解除S表和SP表的参照关系
+ALTER TABLE SP
+DROP FOREIGN KEY ;
+
+-- 创建触发器
+DELIMITER //
+CREATE TRIGGER update_Sno
+AFTER UPDATE ON Student
+FOR EACH ROW
+BEGIN
+  UPDATE SP
+  SET Sno = NEW.Sno
+  WHERE Sno = OLD.Sno;
+END//
+DELIMITER ;
+
+2.在 S 表中编写 insert 的触发器，假如表的学生不能超过 18个，如果低于此数，添加可以完成；如果超过此数，则插入将不能实现。进行验证。
+-- 创建SC_log表用于保存修改前后的Grade字段信息
+CREATE TABLE SC_log (
+  Sno INT,
+  Pno INT,
+  Old_Grade INT,
+  New_Grade INT,
+  Modified_Date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- 创建触发器
+DELIMITER //
+CREATE TRIGGER update_Grade
+AFTER UPDATE ON SP
+FOR EACH ROW
+BEGIN
+  IF OLD.Grade <> NEW.Grade THEN
+    INSERT INTO SC_log (Sno, Pno, Old_Grade, New_Grade)
+    VALUES (OLD.Sno, OLD.Pno, OLD.Grade, NEW.Grade);
+  END IF;
+END//
+DELIMITER ;
+
+3.在 SP 表上编写 update 触发器，当修改 SP表中的 Grade 字段时将其修改前后的信息保存在 SC_log 表中。实验完成后,撤消建立的基本表和视图。
+-- 删除触发器
+DROP TRIGGER IF EXISTS update_Sno;
+DROP TRIGGER IF EXISTS limit_students;
+DROP TRIGGER IF EXISTS update_Grade;
+
+-- 删除SC_log表
+DROP TABLE IF EXISTS SC_log;
+
+-- 恢复S表和SP表的参照关系
+ALTER TABLE SP
+ADD CONSTRAINT FK_Sno FOREIGN KEY (Sno) REFERENCES S(Sno);
+
+
+
+
+
+
+
+
+	
